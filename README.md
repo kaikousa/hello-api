@@ -6,4 +6,5 @@ A tiny hello-world app for testing out deployments etc.
 
 ```
 pip install Flask
-python hello_api.py
+FLASK_APP=hello_api.py flask run --host=0.0.0.0
+```
