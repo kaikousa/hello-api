@@ -8,10 +8,19 @@ hello-api implemented with Sinatra. Uses [puma](http://puma.io/) as application 
 
 ### Installing and running
 
+**Basic**
+
 ```
 cd ruby
 bundle
 sudo bundle exec puma -p 80
+```
+
+**Build and run in Docker container**
+
+```
+docker build -t helloapi:latest .
+docker run -it helloapi
 ```
 
 ## Python
