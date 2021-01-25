@@ -1,14 +1,14 @@
 # hello-api
 
-A tiny hello-world app for testing out deployments etc.
+A tiny hello-world app for testing out deployments.
 
-## Ruby
+```
+docker run -it kaikousa/hello
+```
 
-hello-api implemented with Sinatra. Uses [puma](http://puma.io/) as application server.
+## Installing and running
 
-### Installing and running
-
-**Basic**
+**Run locally**
 
 ```
 cd ruby
@@ -16,20 +16,13 @@ bundle
 sudo bundle exec puma -p 80
 ```
 
-**Build and run in Docker container**
+**Build and run in a Docker container**
 
 ```
 make build
 make run
 ```
 
-## Python
+## Stack
 
-Flask-based hello-api.
-
-### Installing and running
-
-```
-pip install Flask
-FLASK_APP=hello_api.py flask run --host=0.0.0.0
-```
+hello-api is implemented with Sinatra. Uses [puma](http://puma.io/) as application server.
