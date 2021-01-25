@@ -19,8 +19,8 @@ sudo bundle exec puma -p 80
 **Build and run in Docker container**
 
 ```
-docker build -t helloapi:latest .
-docker run -it helloapi
+make build
+make run
 ```
 
 ## Python
