@@ -9,5 +9,9 @@ class App < Sinatra::Application
   get '/status' do
     "ok"
   end
+  
+  get '/echo/:what' do
+    "Echo #{params['what']}"
+  end
 
 end
