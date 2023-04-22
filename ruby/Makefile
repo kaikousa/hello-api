@@ -5,4 +5,4 @@ publish:
 	docker push kaikousa/hello
 
 run:
-	docker run -p 8181:80 -it kaikousa/hello
+	docker run -p 8282:80 -it kaikousa/hello
