@@ -29,12 +29,12 @@ class App < Sinatra::Application
     data = json_body
 
     # Simulate a long running operation
-    sleep_time = data['sleep'] ? data['sleep'].to_i : 0
-    sleep(sleep_time)
+    sleep_duration = data['sleep'] || 0
+    sleep(sleep_duration)
 
     content_type :json
     {
-      "msg": "Slept #{sleep_time} seconds",
+      "msg": "Slept #{sleep_duration} seconds",
       "echo": data['echo'] || 'No echo defined'
     }.to_json
   end
